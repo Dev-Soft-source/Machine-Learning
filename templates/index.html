@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h2>House Price Prediction</h2>
+    <form method="POST">
+        <label>Location:</label>
+        <select name="location">
+            <option>Downtown</option>
+            <option>Suburb</option>
+            <option>Countryside</option>
+        </select><br><br>
+
+        <label>Size (sqft):</label>
+        <input type="number" name="size_sqft" required><br><br>
+
+        <label>Rooms:</label>
+        <input type="number" name="rooms" required><br><br>
+
+        <label>Bathrooms:</label>
+        <input type="number" name="bathrooms" required><br><br>
+
+        <label>Year Built:</label>
+        <input type="number" name="year_built" required><br><br>
+
+        <label>Garage (0 or 1):</label>
+        <input type="number" name="garage" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Price: ${{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
