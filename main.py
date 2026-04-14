@@ -6,11 +6,10 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.layers import TextVectorization
-from pkg_resources import parse_version
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-import tensorflow_hub as hub
+#import tensorflow_hub as hub
 
 df = pd.read_csv('spam.csv', encoding='latin-1')
 df.head()
@@ -92,28 +91,3 @@ model_2 = keras.Model(input_layer, output_layer, name="BiLSTM_Model")
 history_2 = compile_and_fit(model_2)
 
 
-use_layer = hub.KerasLayer(
-    "https://tfhub.dev/google/universal-sentence-encoder/4",
-    trainable=False,
-    input_shape=[],
-    dtype=tf.string,
-    name='USE'
-)
-input_layer = layers.Input(shape=[], dtype=tf.string)
-embedding = layers.Lambda(lambda x: use_layer(
-    x), output_shape=(512,))(input_layer)
-x = layers.Dense(64, activation='relu')(embedding)
-x = layers.Dropout(0.2)(x)
-output_layer = layers.Dense(1, activation='sigmoid')(x)
-model_3 = keras.Model(input_layer, output_layer, name="USE_Model")
-history_3 = compile_and_fit(model_3)
-
-results = {
-    'Dense Embedding': get_metrics(model_1, X_test_np, y_test_np),
-    'Bi-LSTM': get_metrics(model_2, X_test_np, y_test_np),
-    'Transfer Learning (USE)': get_metrics(model_3, X_test_np, y_test_np)
-}
-
-results_df = pd.DataFrame(results).transpose()
-print("Performance Table:")
-print(results_df)
