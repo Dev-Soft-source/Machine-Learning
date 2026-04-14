@@ -6,3 +6,4 @@
 - 3-Classification_text_doc
 - 4-Classify_handwritten_digit
 - 5-OCR_handwritten_digit
+- 6-Recognizing_handwritten_digit
