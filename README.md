@@ -10,3 +10,4 @@
 - 7-Cartooning Image
 - 8-Count number of Object
 - 9-Text Detection and Extraction
+- 10-Debit Card Fraud Detection
