@@ -9,3 +9,4 @@
 - 6-Recognizing_handwritten_digit
 - 7-Cartooning Image
 - 8-Count number of Object
+- 9-Text Detection and Extraction
