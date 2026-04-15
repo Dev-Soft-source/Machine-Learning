@@ -1,55 +1,15 @@
-# Bitcoin Price Prediction
-
-This repository demonstrates a machine learning workflow for predicting Bitcoin price movements using historical data.
-
-## Project Overview
-
-- **Dataset**: `bitcoin.csv`
-- **Script**: `main.py`
-- **Goal**: preprocess historical Bitcoin data, extract date-based features, and evaluate classification models on price direction.
-
-## What the Project Shows
-
-- Loading and inspecting time series data with `pandas`
-- Date parsing and feature engineering from the `Date` column
-- Visualizing yearly averages for price columns
-- Training and evaluating multiple models, including:
-  - `LogisticRegression`
-  - `SVC`
-  - `XGBClassifier`
-
-## Requirements
-
-- Python 3.8+
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
-- xgboost
-
-## Running the Project
-
-1. Install dependencies:
-
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn xgboost
-```
-
-2. Run the analysis:
-
-```bash
-python main.py
-```
-
-## Notes
-
-- The current script reads `bitcoin.csv` from the project root.
-- Ensure the dataset file is present before running the script.
-- The model evaluation uses AUC score from predicted probabilities.
-
-## Repository Contents
-
-- `main.py` - main analysis and model training script
-- `bitcoin.csv` - historical Bitcoin price dataset
-
+# Machine-Learning
+- House-price
+- Customer-Churn
+- 1-detect_spam_email
+- 2-SMS_spam_detect
+- 3-Classification_text_doc
+- 4-Classify_handwritten_digit
+- 5-OCR_handwritten_digit
+- 6-Recognizing_handwritten_digit
+- 7-Cartooning Image
+- 8-Count number of Object
+- 9-Text Detection and Extraction
+- 10-Debit Card Fraud Detection
+- 11-Bitcoin Price Prediction
+- 12-Sales Forecast prediction
