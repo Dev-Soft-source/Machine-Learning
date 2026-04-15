@@ -8,3 +8,4 @@
 - 5-OCR_handwritten_digit
 - 6-Recognizing_handwritten_digit
 - 7-Cartooning Image
+- 8-Count number of Object
