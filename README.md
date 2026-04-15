@@ -12,3 +12,4 @@
 - 9-Text Detection and Extraction
 - 10-Debit Card Fraud Detection
 - 11-Bitcoin Price Prediction
+- 12-Sales Forecast Prediction
