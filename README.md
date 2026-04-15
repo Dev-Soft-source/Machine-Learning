@@ -1,11 +1,45 @@
-# Machine-Learning
-- House-price
-- Customer-Churn
-- 1-detect_spam_email
-- 2-SMS_spam_detect
-- 3-Classification_text_doc
-- 4-Classify_handwritten_digit
-- 5-OCR_handwritten_digit
-- 6-Recognizing_handwritten_digit
-- 7-Cartooning Image
-- 8-Count number of Object
+# Count Number of Objects
+
+This project demonstrates a simple object counting example using OpenCV and image processing techniques. The provided script loads an image, converts it to grayscale, applies smoothing and edge detection, and counts the detected contours to estimate how many objects are present.
+
+## Features
+
+- Reads an input image (`coins.jpg`)
+- Converts the image to grayscale
+- Applies Gaussian blur and Canny edge detection
+- Finds and draws contours around detected objects
+- Prints the number of objects found in the image
+
+## Requirements
+
+- Python 3.x
+- OpenCV (`opencv-python`)
+- NumPy
+- Matplotlib
+
+Install dependencies with:
+
+```bash
+pip install -r reqirements.txt
+```
+
+## Usage
+
+Run the main script with:
+
+```bash
+python main.py
+```
+
+The script will display the processed grayscale image and print the detected object count to the console.
+
+## Notes
+
+- Ensure `coins.jpg` is present in the same folder as `main.py`
+- The current implementation counts external contours and works best for images with clearly separated objects
+
+## Project structure
+
+- `main.py` — main object counting script
+- `reqirements.txt` — dependency list
+- `README.md` — project documentation
