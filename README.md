@@ -14,3 +14,4 @@
 - 11-Bitcoin Price Prediction
 - 12-Sales Forecast prediction
 - 13-Customer Churn prediction
+- 14-Inventory Demand Forecast
