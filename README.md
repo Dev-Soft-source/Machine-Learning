@@ -13,3 +13,4 @@
 - 10-Debit Card Fraud Detection
 - 11-Bitcoin Price Prediction
 - 12-Sales Forecast prediction
+- 13-Customer Churn prediction
