@@ -1,18 +1,48 @@
-# Machine-Learning
-- House-price
-- Customer-Churn
-- 1-detect_spam_email
-- 2-SMS_spam_detect
-- 3-Classification_text_doc
-- 4-Classify_handwritten_digit
-- 5-OCR_handwritten_digit
-- 6-Recognizing_handwritten_digit
-- 7-Cartooning Image
-- 8-Count number of Object
-- 9-Text Detection and Extraction
-- 10-Debit Card Fraud Detection
-- 11-Bitcoin Price Prediction
-- 12-Sales Forecast prediction
-- 13-Customer Churn prediction
-- 14-Inventory Demand Forecast
-- 15-Boston Housing Indiction
+# Housing Price Prediction
+
+This project predicts California housing prices using machine learning with Python and Scikit-learn.
+
+## Project Structure
+
+```text
+housing-price-prediction/
+│
+├── data/
+│   ├── raw/
+│   │   └── housing.csv
+│   └── processed/
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_preprocessing.py
+│   ├── train.py
+│   ├── evaluate.py
+│   └── predict.py
+│
+├── models/
+│   └── model.pkl
+│
+├── outputs/
+│   ├── figures/
+│   └── reports/
+│
+├── app/
+│   └── simple_ui.py
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── main.py
+```
+
+## Usage
+
+Install dependencies and run the Streamlit app with:
+
+```bash
+pip install -r requirements.txt
+streamlit run app/simple_ui.py
+```
