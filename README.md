@@ -1,17 +1,45 @@
-# Machine-Learning
-- House-price
-- Customer-Churn
-- 1-detect_spam_email
-- 2-SMS_spam_detect
-- 3-Classification_text_doc
-- 4-Classify_handwritten_digit
-- 5-OCR_handwritten_digit
-- 6-Recognizing_handwritten_digit
-- 7-Cartooning Image
-- 8-Count number of Object
-- 9-Text Detection and Extraction
-- 10-Debit Card Fraud Detection
-- 11-Bitcoin Price Prediction
-- 12-Sales Forecast prediction
-- 13-Customer Churn prediction
-- 14-Inventory Demand Forecast
+# Inventory Demand Forecast
+
+This repository contains a Python project for forecasting store inventory demand using historical sales data.
+
+## Project Overview
+
+- `main.py`: main script for data preprocessing, feature engineering, and model creation.
+- `StoreDemand.csv`: dataset containing sales records, dates, store IDs, item IDs, and demand values.
+
+## What it does
+
+The project:
+
+- loads sales data from `StoreDemand.csv`
+- extracts date features such as year, month, day, weekday, weekend, and holiday indicators
+- encodes cyclical month seasonality with sine/cosine features
+- builds regression models to forecast demand
+- visualizes sales trends across multiple attributes
+
+## How to run
+
+1. Make sure you have Python installed.
+2. Install dependencies if needed:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost holidays
+```
+
+3. Run the script:
+
+```bash
+python main.py
+```
+
+## Notes
+
+- The current script uses `holidays` to mark Indian public holidays.
+- The visualization section generates bar charts for average sales by store, year, month, weekday, weekend, and holiday.
+
+## Recommended improvements
+
+- split the code into functions for preprocessing, modeling, and evaluation
+- add train/test split and scoring metrics for the final model
+- save results and plots to files for reproducibility
+- add a `requirements.txt` file for dependency management
