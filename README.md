@@ -1,16 +1,33 @@
-# Machine-Learning
-- House-price
-- Customer-Churn
-- 1-detect_spam_email
-- 2-SMS_spam_detect
-- 3-Classification_text_doc
-- 4-Classify_handwritten_digit
-- 5-OCR_handwritten_digit
-- 6-Recognizing_handwritten_digit
-- 7-Cartooning Image
-- 8-Count number of Object
-- 9-Text Detection and Extraction
-- 10-Debit Card Fraud Detection
-- 11-Bitcoin Price Prediction
-- 12-Sales Forecast prediction
-- 13-Customer Churn prediction
+# Customer Churn Prediction
+
+## Overview
+This project contains a customer churn prediction model built using the Telco Customer Churn dataset. The goal is to identify which customers are likely to cancel service so businesses can take action to improve retention.
+
+## Files
+- `main.py` - Primary script for data loading, preprocessing, training, and evaluation.
+- `Telco-Customer-Churn.csv` - Dataset used for model development and testing.
+- `requirements.txt` - Python dependencies required to run the project.
+- `README.md` - Project documentation.
+
+## Dataset
+The dataset includes customer demographics, account information, service usage, and churn status. It is commonly used for classification tasks in customer analytics.
+
+## Setup
+1. Create and activate a Python virtual environment.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+Run the main script to train and evaluate the churn prediction model:
+```bash
+python main.py
+```
+
+## Notes
+- Ensure `Telco-Customer-Churn.csv` is in the same directory as `main.py`.
+- Modify `main.py` if you want to change preprocessing steps, model type, or evaluation metrics.
+
+## License
+Use this code for learning and experimentation.
